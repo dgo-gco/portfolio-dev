@@ -1,0 +1,15 @@
+.main {
+    height: 90vh;
+    background-color: var(--light-blue);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.title {
+    font-family: 'Bebas Neue';
+    font-size: 78px;
+    z-index: 0;
+}

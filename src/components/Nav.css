@@ -1,0 +1,160 @@
+:root {
+    --light-blue: #CAF0F8;
+    --second-l-blue: #90E0EF;
+    --aqua: #00B4D8;
+    --dark-blue: #03045E;
+}
+
+.nav--bar {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    border-radius: 0px;
+  }
+  
+  .ul--nav, 
+  .search-inp-btn {
+    display: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--dark-blue);
+  }
+  
+  .logo {
+    border-right: 1px solid var(--dark-blue);
+    padding-right: 10px;
+    font-weight: 900;
+    font-size: 28px;
+    font-family: 'Bebas Neue';
+  }
+  
+  .point {
+    color: var(--aqua);
+  }
+  
+  .nav--btn {
+    background-color: var(--dark-blue);
+    color: white;
+    border: none;
+    padding: 15px;
+    height: 100%;
+    margin-left: 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+.burger--menu {
+    height: 40px;
+    width: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.burger-bar {
+    width: 45px;
+    height: 4px;
+    background-color: var(--dark-blue);
+    border-radius: 5px;
+}
+
+.menu {
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.menu.hidden {
+    right: -100%;
+    transition: 650ms;
+} 
+
+.menu.visible {
+    display: inherit;
+    right: 0px;
+    transition: 850ms;
+}
+
+.burger-bar.click:nth-child(1) {
+    transform: rotate(45deg) translate(12px, 8px);
+    transition: ease-out 0.5s;
+    z-index: 2;
+}
+
+.burger-bar.click:nth-child(2) {
+    transform: scale(0.1);
+    transition: ease-out 0.5s;
+    z-index: 2;
+}
+
+.burger-bar.click:nth-child(3) {
+    transform: rotate(135deg) translate(-9px, 8px);
+    transition: ease-out 0.5s;
+    z-index: 2;
+}
+
+.burger-bar.unclick {
+    transform: rotate(0) translate(0);
+    transition:cubic-bezier(0.175, 0.885, 0.32, 1.725) 0.5s;
+}
+
+.ul--slide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    gap: 25px;
+    margin-top: 60px
+}
+
+.ul--slide > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.ul--slide > li:hover {
+    background-color: var(--aqua);
+}
+
+@media screen and (min-width: 639px) {
+    .nav--bar {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 0 6px 6px 0;
+    }
+    
+    .ul--nav {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+      padding: 10px;
+    }
+  
+    .search-inp-btn {
+      display: block;
+    }
+
+    .burger--menu {
+        display: none;
+    }
+
+    .menu {
+      display: none;
+  }
+  }
