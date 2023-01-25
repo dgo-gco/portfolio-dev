@@ -9,11 +9,11 @@ type ProjectSectionProps = {
 
 export const ProjectSection = ({proyectos}: ProjectSectionProps) => {
   return (
-    <div className="projects-section">
+    
         <div className="card">
         <div className="card--c" >
             <div className="project-img-around">
-                <a href='#' className="link-project">
+                <a href={proyectos.link} className="link-project">
                     <img src='https://source.unsplash.com/random' alt="" className="project--imgs"/>
                 </a>
             </div>
@@ -23,7 +23,7 @@ export const ProjectSection = ({proyectos}: ProjectSectionProps) => {
             </div>
         </div>
         </div>
-    </div>
+    
   )
 }
 
