@@ -9,7 +9,6 @@ type ProjectSectionProps = {
 
 export const ProjectSection = ({proyectos}: ProjectSectionProps) => {
   return (
-    
         <div className="card">
         <div className="card--c" >
             <div className="project-img-around">
@@ -23,7 +22,6 @@ export const ProjectSection = ({proyectos}: ProjectSectionProps) => {
             </div>
         </div>
         </div>
-    
   )
 }
 
