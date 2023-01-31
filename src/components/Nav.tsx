@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import './Nav.css';
 import '../index.css';
 
-export const Nav = () => {
+type NavProps = {
+    lightBtn: () => void;
+    lightMode: string
+};
+
+export const Nav = ({lightBtn, lightMode}: NavProps) => {
     const [burger_class, setBurgerClass] = useState("burger-bar unclick")
     const [menu_class, setMenuClass] = useState("menu hidden")
     const [menuClicked, setMenuClicked] = useState(false)
@@ -19,32 +24,30 @@ export const Nav = () => {
         setMenuClicked(!menuClicked)
     }
   return (
-    <nav className="nav--bar">
-            <div className="logo">WEB DEV<span className="point">.</span></div>
-            <ul className="ul--nav">
-                {/* <Link to='#about-sect'>
-                About
-                </Link> */}
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div className="search-inp-btn">
-                <input type="text" name="" id="" />
-                <button className="nav--btn">Contact Me</button>
+    <nav className='navbar'>
+     <div className={`nav--bar ${lightMode}`}>
+        <div className={`logo ${lightMode}`}>WEB DEV<span className="point">.</span></div>
+            <div className="gauche-nav">
+                <ul className="ul--nav">
+                    <li><a href="#" className={`a-link ${lightMode}`}>Projects</a></li>
+                    <li><a href="#" className={`a-link ${lightMode}`}>Contact</a></li>
+                </ul>
+                <button className={`nav--btn ${lightMode}`} onClick={lightBtn}>Dark Mode</button>
             </div>
 
             <div className="burger--menu" onClick={updateMenu}>
-                <div className={burger_class}></div>
-                <div className={burger_class}></div>
-                <div className={burger_class}></div>
+                <div className={`${burger_class} ${lightMode}`}></div>
+                <div className={`${burger_class} ${lightMode}`}></div>
+                <div className={`${burger_class} ${lightMode}`}></div>
             </div>
-            <div className={menu_class}>
-                    <ul className="ul--slide">
-                        <li><a href="#about--section">About</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
+            <div className={`${menu_class} ${lightMode}`}>
+                    <ul className={`ul--slide ${lightMode}`}>
+                        <li><a href="#about--section" className={`a-brg ${lightMode}`}>About</a></li>
+                        <li><a href="#" className={`a-brg ${lightMode}`}>Projects</a></li>
+                        <li><a href="#" className={`a-brg ${lightMode}`}>Contact</a></li>
                     </ul>
             </div>
-        </nav>
+     </div>
+    </nav>
   )
 }

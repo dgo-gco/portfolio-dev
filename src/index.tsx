@@ -10,6 +10,7 @@ import {
 import { ProjectPage } from './components/pages/ProjectPage';
 // import ProjectPageTwo from './Pages/ProjectPageTwo';
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -17,7 +18,8 @@ const router = createBrowserRouter([
   },
   {
     path: "/project",
-    element: <ProjectPage />
+    element: <ProjectPage
+    />
   },
   // {
   //   path: "/projecttwo",

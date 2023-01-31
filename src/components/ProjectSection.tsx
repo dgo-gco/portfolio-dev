@@ -4,16 +4,17 @@ import { ProjectsData } from '../project-prop'
 
 
 type ProjectSectionProps = {
-    proyectos: ProjectsData
+    proyectos: ProjectsData,
+    lightMode: string
 }
 
-export const ProjectSection = ({proyectos}: ProjectSectionProps) => {
+export const ProjectSection = ({proyectos, lightMode}: ProjectSectionProps) => {
   return (
         <div className="card">
-        <div className="card--c" >
+        <div className={`card--c ${lightMode}`} >
             <div className="project-img-around">
                 <a href={proyectos.link} className="link-project">
-                    <img src='https://source.unsplash.com/random' alt="" className="project--imgs"/>
+                    <img src={proyectos.img} alt="" className="project--imgs"/>
                 </a>
             </div>
             <div className="card--txt">

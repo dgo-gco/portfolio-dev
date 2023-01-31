@@ -1,11 +1,12 @@
 import React from 'react'
-import { Nav } from '../Nav'
+// import { Nav } from '../Nav'
 import './ProjectPage.css'
 
 export const ProjectPage = () => {
   return (
     <div className="project--pages">
-        <Nav />
+        {/* <Nav 
+        /> */}
         <div className="project--page">
             <div className="project--container">
                 <div className="project--image">

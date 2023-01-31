@@ -5,14 +5,17 @@ import './ProjectSection.css'
 
 type ProjectProps = {
     proyectos: ProjectsData[];
+    lightMode: string
 }
 
-export const Project = ({proyectos}: ProjectProps) => {
+export const Project = ({proyectos, lightMode}: ProjectProps) => {
     const projectData = proyectos.map(proyecto => (
-        <ProjectSection proyectos={proyecto} />
+        <ProjectSection 
+        lightMode={lightMode}
+        proyectos={proyecto} />
     ))
   return (
-    <div className='project--cards'>
+    <div className={`project--cards ${lightMode}`}>
       <div className="cards">
         {projectData}
       </div>

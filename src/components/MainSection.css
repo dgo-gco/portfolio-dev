@@ -1,4 +1,4 @@
-.main {
+.main.dark.off {
     height: 90vh;
     background-color: var(--light-blue);
     border-radius: 20px;
@@ -7,9 +7,38 @@
     justify-content: center;
     align-items: center;
 }
+
+.main.dark.on {
+    height: 90vh;
+    background-color: #09192F;
+    border: 1px solid #00B4D8;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
   
-.title {
+.title.dark.off {
+    display: flex;
     font-family: 'Bebas Neue';
     font-size: 78px;
-    z-index: 0;
+    background-color: #CAF0F8;
+}
+
+.title.dark.on {
+    font-family: 'Bebas Neue';
+    font-size: 78px;
+    color: #FFF;
+    background-color: #00b4d800;
+}
+
+
+
+.main.dark.off > p {
+    color: #000
+}
+
+.main.dark.on > p {
+    color: #FFF
 }

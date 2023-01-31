@@ -1,0 +1,44 @@
+.footer {
+    height: 20vh;
+}
+
+.footer.dark.on {
+    height: 20vh;
+    color: #FFF;
+}
+
+.contact-section {
+    width: 90%;
+    margin: auto;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 15px;
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.mail.dark.on {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #FFF;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
