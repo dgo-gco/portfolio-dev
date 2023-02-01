@@ -22,13 +22,13 @@
 .title.dark.off {
     display: flex;
     font-family: 'Bebas Neue';
-    font-size: 78px;
+    font-size: clamp(58px, 5vw, 78px);
     background-color: #CAF0F8;
 }
 
 .title.dark.on {
     font-family: 'Bebas Neue';
-    font-size: 78px;
+    font-size: clamp(58px, 5vw, 78px);
     color: #FFF;
     background-color: #00b4d800;
 }
