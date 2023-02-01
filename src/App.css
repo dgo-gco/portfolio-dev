@@ -26,10 +26,6 @@ body {
   flex-direction: column;
 }
 
-.dark.off {
-  /* background-color: #FFF; */
-}
-
 .dark.on {
   background-color: #05101f;
   font-family: 'Cabin', sans-serif;
