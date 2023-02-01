@@ -8,7 +8,7 @@ export const projects = [
   },
   {
     id: "2",
-    link: "country-api-dgo.netlify.app",
+    link: "https://country-api-dgo.netlify.app/",
     img: "../images/The-Worldbook-React-project.png",
     name: "The Worldbook",
     description: "Using Reactjs 18, I started to manipulate an interesting API",
