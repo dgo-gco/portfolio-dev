@@ -17,7 +17,7 @@ export const ProjectSection = ({proyectos, lightMode}: ProjectSectionProps) => {
                     <img src={proyectos.img} alt="" className="project--imgs"/>
                 </a>
             </div>
-            <div className="card--txt">
+            <div className={`card--txt ${lightMode}`}>
                 <h4>{proyectos.name}</h4>
                 <p>{proyectos.description}</p>
             </div>

@@ -27,7 +27,7 @@ body {
 }
 
 .dark.off {
-  background-color: #FFF;
+  /* background-color: #FFF; */
 }
 
 .dark.on {
