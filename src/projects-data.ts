@@ -25,23 +25,23 @@ export const projects = [
     id: "4",
     link: "https://source.unsplash.com/random",
     img: "../images/Book-objects-js.png",
-    name: "Self Care Center",
+    name: "Book Library",
     description:
-      "This is an app that helps users remind themselves of their inherent value",
+      "What books will you read this year? add them to your library",
   },
   {
     id: "5",
-    link: "https://incandescent-douhua-84d310.netlify.app/",
-    img: "https://source.unsplash.com/random",
-    name: "Self Care Center",
+    link: "https://simplon-site-html-css-js.netlify.app/",
+    img: "../images/Simplon-site-formation.png",
+    name: "Simplon.co website clone",
     description:
-      "This is an app that helps users remind themselves of their inherent value",
+      "Following a provided figma file, I've created a simplon website clone",
   },
   {
-    id: "26",
+    id: "6",
     link: "https://incandescent-douhua-84d310.netlify.app/",
     img: "https://source.unsplash.com/random",
-    name: "Self Care Center",
+    name: "Project #6",
     description:
       "This is an app that helps users remind themselves of their inherent value",
   },
