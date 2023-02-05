@@ -36,13 +36,5 @@ export const projects = [
     name: "Simplon.co website clone",
     description:
       "Following a provided figma file, I've created a simplon website clone",
-  },
-  {
-    id: "6",
-    link: "https://incandescent-douhua-84d310.netlify.app/",
-    img: "https://source.unsplash.com/random",
-    name: "Project #6",
-    description:
-      "This is an app that helps users remind themselves of their inherent value",
-  },
+  }
 ];

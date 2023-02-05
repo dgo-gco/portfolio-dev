@@ -1,14 +1,15 @@
 import React from 'react'
 import './AboutMe.css'
 
+
 type AboutMeProps = {
   lightMode: string
 }
 
 export const AboutMe = ({ lightMode }: AboutMeProps) => {
   return (
-    <div className={`blue-bg ${lightMode}`}>
-      <div className="info--sec" id="about-sect">
+    <div className={`blue-bg ${lightMode}`} id="about-sect">
+      <div className="info--sec">
         <div className="shape-img">
             <img src="https://source.unsplash.com/random" alt="" />
         </div>

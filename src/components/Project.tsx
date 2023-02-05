@@ -5,7 +5,7 @@ import './ProjectSection.css'
 
 type ProjectProps = {
     proyectos: ProjectsData[];
-    lightMode: string
+    lightMode: string;
 }
 
 export const Project = ({proyectos, lightMode}: ProjectProps) => {

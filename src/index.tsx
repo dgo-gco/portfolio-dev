@@ -3,36 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from 'react-router-dom';
-import { ProjectPage } from './components/pages/ProjectPage';
-// import ProjectPageTwo from './Pages/ProjectPageTwo';
+import { Router } from './components/Router';
+// import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom'
 
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />
-  },
-  {
-    path: "/project",
-    element: <ProjectPage
-    />
-  },
-  // {
-  //   path: "/projecttwo",
-  //   element: <ProjectPageTwo />
-  // },
-]);
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <Router />
   </React.StrictMode>
 );
 

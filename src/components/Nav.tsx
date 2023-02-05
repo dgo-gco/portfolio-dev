@@ -52,13 +52,18 @@ export const Nav = ({ lightBtn, lightMode }: NavProps) => {
         </div>
         <div className="gauche-nav">
           <ul className="ul--nav">
+          <li>
+              <a href='./#about-sect' className={`a-link ${lightMode}`}>
+                About
+              </a>
+            </li>
             <li>
-              <a href="#" className={`a-link ${lightMode}`}>
+              <a href='./#projects' className={`a-link ${lightMode}`}>
                 Projects
               </a>
             </li>
             <li>
-              <a href="#" className={`a-link ${lightMode}`}>
+              <a href='./#contact' className={`a-link ${lightMode}`}>
                 Contact
               </a>
             </li>
@@ -76,17 +81,17 @@ export const Nav = ({ lightBtn, lightMode }: NavProps) => {
         <div className={`${menu_class} ${lightMode}`}>
           <ul className={`ul--slide ${lightMode}`}>
             <li>
-              <a href="#about--section" className={`a-brg ${lightMode}`}>
+              <a href="./#about-sect" className={`a-brg ${lightMode}`}>
                 About
               </a>
             </li>
             <li>
-              <a href="#" className={`a-brg ${lightMode}`}>
+              <a href="./#projects" className={`a-brg ${lightMode}`}>
                 Projects
               </a>
             </li>
             <li>
-              <a href="#" className={`a-brg ${lightMode}`}>
+              <a href="./#contact" className={`a-brg ${lightMode}`}>
                 Contact
               </a>
             </li>

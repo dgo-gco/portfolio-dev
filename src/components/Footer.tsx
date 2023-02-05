@@ -9,15 +9,15 @@ type FooterProps = {
 
 export const Footer = ({ lightMode }: FooterProps) => {
   return (
-    <div className={`footer ${lightMode}`}>
+    <div className={`footer ${lightMode}`} id='contact'>
         <div className="contact-section">
             <div className={`mail ${lightMode}`}>
                 <FaEnvelope />
                 <a href="mailto:jdiegogarciaco@gmail.com" className={`mail ${lightMode}`}>jdiegogarciaco@gmail.com</a>
             </div>
             <div className={`socials ${lightMode}`}>
-                <FaGithub />
-                <FaLinkedin />
+                <a href="https://github.com/dgo-gco"><FaGithub /></a>
+                <a href="https://www.linkedin.com/in/diegcia21/"><FaLinkedin /></a>
             </div>
             <p>Copyright 2023 © Diego Garcia</p>
         </div>

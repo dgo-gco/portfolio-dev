@@ -120,6 +120,14 @@
   width: min(480px, 100%);
 }
 
+.tit-txt {
+  color: #05101f;
+}
+
+.tit-txt.dark.on {
+  color: #fff;
+}
+
 @media screen and (max-width: 721px) {
   .project--cards {
     padding: 20px;

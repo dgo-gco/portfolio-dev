@@ -1,21 +1,33 @@
-import React from 'react'
-// import { Nav } from '../Nav'
 import './ProjectPage.css'
+import { useLocation, useParams } from 'react-router-dom'
+import { BsArrowLeft } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
-export const ProjectPage = () => {
+type PageProps = {
+    lightMode: string
+}
+
+export const ProjectPage = ({lightMode}: PageProps) => {
+    const location = useLocation()
+    console.log(location)
+    const projectData = location.state
+    console.log(projectData.any);
+    console.log(lightMode)
+    
   return (
-    <div className="project--pages">
-        {/* <Nav 
-        /> */}
-        <div className="project--page">
-            <div className="project--container">
+    <div className={`project--pages ${lightMode}`}>
+        <div className={`back-section ${lightMode}`}>
+            <Link to='/'><BsArrowLeft className={`arrow ${lightMode}`}/></Link>
+        </div>
+        <div className={`project--page ${lightMode}`}>
+            <div className={`project--container ${lightMode}`}>
                 <div className="project--image">
-                    <img src="https://source.unsplash.com/random" alt="" />
+                    <img src={projectData.proyectos.img} alt="" />
                 </div>
-                <div className="project--text">
-                    <h1>Project #1</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, deleniti repudiandae corporis illo quae veritatis a necessitatibus magni laborum soluta.</p>
-                    <button id="button-pj">Voir plus</button>
+                <div className={`project--text ${lightMode}`}>              
+                    <h1>{projectData.proyectos.name}</h1>
+                    <p>{projectData.proyectos.description}</p>
+                    <a href={projectData.proyectos.link}><button id="button-pj">Voir Plus</button></a>
                 </div>
             </div>
         </div>

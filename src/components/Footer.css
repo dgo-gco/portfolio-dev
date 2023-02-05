@@ -42,3 +42,10 @@ a {
     gap: 5px;
 }
 
+.socials.dark.on > a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #FFF;
+}
+
