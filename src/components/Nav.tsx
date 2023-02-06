@@ -24,7 +24,7 @@ export const Nav = ({ lightBtn, lightMode }: NavProps) => {
     }
     setMenuClicked(!menuClicked);
   };
-
+  console.log(menuClicked)
   const changeButtonText = () => {
     if (buttonText === "Dark Mode") {
       setButtonText("Light Mode");
@@ -59,7 +59,7 @@ export const Nav = ({ lightBtn, lightMode }: NavProps) => {
               </a>
             </li>
             <li>
-              <a href='./#contact' className={`a-link ${lightMode}`}>
+              <a href='./#contact' className={`a-link ${lightMode}`} >
                 Contact
               </a>
             </li>
@@ -77,17 +77,17 @@ export const Nav = ({ lightBtn, lightMode }: NavProps) => {
         <div className={`${menu_class} ${lightMode}`}>
           <ul className={`ul--slide ${lightMode}`}>
             <li>
-              <a href="./#about-sect" className={`a-brg ${lightMode}`}>
+              <a href="./#about-sect" className={`a-brg ${lightMode}`} onClick={updateMenu}>
                 About
               </a>
             </li>
             <li>
-              <a href="./#projects" className={`a-brg ${lightMode}`}>
+              <a href="./#projects" className={`a-brg ${lightMode}`} onClick={updateMenu}>
                 Projects
               </a>
             </li>
             <li>
-              <a href="./#contact" className={`a-brg ${lightMode}`}>
+              <a href="./#contact" className={`a-brg ${lightMode}`} onClick={updateMenu}>
                 Contact
               </a>
             </li>
