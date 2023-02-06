@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./Nav.css";
 import "../index.css";
-import { CiDark } from "react-icons/ci";
-import { CiLight } from "react-icons/ci";
 
 type NavProps = {
   lightBtn: () => void;
@@ -10,12 +8,10 @@ type NavProps = {
 };
 
 export const Nav = ({ lightBtn, lightMode }: NavProps) => {
-  let darkMoon = <CiDark />;
-  let lightSoleil = <CiLight />;
   const [burger_class, setBurgerClass] = useState("burger-bar unclick");
   const [menu_class, setMenuClass] = useState("menu hidden");
   const [menuClicked, setMenuClicked] = useState(false);
-  const [buttonText, setButtonText] = useState(darkMoon);
+  const [buttonText, setButtonText] = useState("Dark Mode");
 
   const updateMenu = () => {
     console.log("here");
@@ -30,11 +26,11 @@ export const Nav = ({ lightBtn, lightMode }: NavProps) => {
   };
 
   const changeButtonText = () => {
-    if (buttonText == darkMoon) {
-      setButtonText(lightSoleil);
+    if (buttonText === "Dark Mode") {
+      setButtonText("Light Mode");
       console.log("light");
     } else {
-      setButtonText(darkMoon);
+      setButtonText("Dark Mode");
       console.log("dark");
     }
   };
