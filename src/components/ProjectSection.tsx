@@ -2,8 +2,6 @@ import React from 'react'
 import './ProjectSection.css'
 import { ProjectsData } from '../project-prop'
 import { Link } from 'react-router-dom'
-import { projects } from '../projects-data'
-import { Nav } from './Nav'
 
 
 type ProjectSectionProps = {

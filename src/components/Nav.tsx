@@ -14,7 +14,6 @@ export const Nav = ({ lightBtn, lightMode }: NavProps) => {
   const [buttonText, setButtonText] = useState("Dark Mode");
 
   const updateMenu = () => {
-    console.log("here");
     if (!menuClicked) {
       setBurgerClass("burger-bar click");
       setMenuClass("menu visible");
@@ -24,14 +23,12 @@ export const Nav = ({ lightBtn, lightMode }: NavProps) => {
     }
     setMenuClicked(!menuClicked);
   };
-  console.log(menuClicked)
+
   const changeButtonText = () => {
     if (buttonText === "Dark Mode") {
       setButtonText("Light Mode");
-      console.log("light");
     } else {
       setButtonText("Dark Mode");
-      console.log("dark");
     }
   };
 

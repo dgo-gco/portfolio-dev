@@ -1,6 +1,5 @@
 import React from 'react'
 import './AboutMe.css'
-import Foto from '../images/fotoportafsour.png'
 
 type AboutMeProps = {
   lightMode: string
@@ -12,7 +11,6 @@ export const AboutMe = ({ lightMode }: AboutMeProps) => {
       <div className="info--sec">
         <div className="shape-img">
           <div className="img-shape"></div>
-            {/* <img src={Foto} alt="" /> */}
         </div>
         <div className={`info--txt ${lightMode}`}>
             <h2>About me</h2>
