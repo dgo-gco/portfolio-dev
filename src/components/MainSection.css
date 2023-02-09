@@ -61,7 +61,7 @@
   animation: shadowBouncing 1.2s ease-in infinite;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
-  bottom: 13.9rem;
+  bottom: 14.7rem;
   content: "";
   height: 0.15rem;
   position: absolute;
@@ -70,7 +70,7 @@
 
 .ball-bouncing .ball {
   animation: ballBouncing 1.2s ease-in infinite;
-  bottom: 14rem;
+  bottom: 14.8rem;
   transform-origin: bottom;
 }
 
@@ -113,7 +113,7 @@
     transform: scale(1.5, 0.6);
   }
 }
-
+/* 
 @media screen and (max-width: 401px){
   .ball-bouncing::before {
     bottom: 14.8rem;
@@ -122,4 +122,4 @@
   .ball-bouncing .ball {
     bottom: 14.9rem;
   }
-}
+} */
