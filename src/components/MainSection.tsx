@@ -9,7 +9,7 @@ export const MainSection = ({ lightMode }: MainProps) => {
   return (
     <div className={`main ${lightMode}`}>
       <div className="main-txt">
-        <h1 className={`title ${lightMode}`}>Hi I am Diego </h1>
+        <h1 className={`title ${lightMode}`}>Hi I am Diego <span className="point">.</span></h1>
         <div className="cardb ball-bouncing">
           <div className="ball"></div>
         </div>
