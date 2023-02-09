@@ -1,44 +1,125 @@
 .main.dark.off {
-    height: 90vh;
-    background-color: var(--light-blue);
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 90vh;
+  background-color: var(--light-blue);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main.dark.on {
-    height: 90vh;
-    background-color: #09192F;
-    border: 1px solid #00B4D8;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 90vh;
+  background-color: #09192f;
+  border: 1px solid #00b4d8;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-  
+
 .title.dark.off {
-    display: flex;
-    font-family: 'Bebas Neue';
-    font-size: clamp(58px, 5vw, 78px);
-    background-color: #CAF0F8;
+  display: flex;
+  font-family: "Bebas Neue";
+  font-size: clamp(58px, 5vw, 78px);
+  background-color: #caf0f8;
 }
 
 .title.dark.on {
-    font-family: 'Bebas Neue';
-    font-size: clamp(58px, 5vw, 78px);
-    color: #FFF;
-    background-color: #00b4d800;
+  font-family: "Bebas Neue";
+  font-size: clamp(58px, 5vw, 78px);
+  color: #fff;
+  background-color: #00b4d800;
 }
 
-
-
 .main.dark.off > p {
-    color: #000
+  color: #000;
 }
 
 .main.dark.on > p {
-    color: #FFF
+  color: #fff;
+}
+
+.main-txt {
+  display: flex;
+}
+
+.ball {
+  background-color: #00b4d8;
+  border-radius: 50%;
+  height: 9px;
+  position: absolute;
+  width: 9px;
+}
+
+.ball-bouncing {
+  background-color: #caf0f8;
+}
+
+.ball-bouncing::before {
+  animation: shadowBouncing 1.2s ease-in infinite;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  bottom: 13.9rem;
+  content: "";
+  height: 0.15rem;
+  position: absolute;
+  width: 0.5rem;
+}
+
+.ball-bouncing .ball {
+  animation: ballBouncing 1.2s ease-in infinite;
+  bottom: 14rem;
+  transform-origin: bottom;
+}
+
+@keyframes ballBouncing {
+  0%,
+  100% {
+    transform: scale(1.5, 0.5);
+  }
+  20% {
+    transform: scaleY(1.2);
+  }
+  40%,
+  80% {
+    transform: translateY(-2.6rem);
+  }
+  70% {
+    transform: translateY(-3rem);
+  }
+  90% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shadowBouncing {
+  0%,
+  100% {
+    transform: scale(2, 0.8);
+  }
+  20% {
+    transform: scale(1.2, 0.8);
+  }
+  40%,
+  80% {
+    transform: scale(0.5, 0.2);
+  }
+  70% {
+    transform: scale(0.5, 0.15);
+  }
+  90% {
+    transform: scale(1.5, 0.6);
+  }
+}
+
+@media screen and (max-width: 401px){
+  .ball-bouncing::before {
+    bottom: 14.8rem;
+  }
+  
+  .ball-bouncing .ball {
+    bottom: 14.9rem;
+  }
 }

@@ -15,18 +15,6 @@ type AppProps = {
 
 function App({lightBtn, lightMode }: AppProps) {
   const proyectos = projects;
-  // const [modeState, setModeState] = React.useState(false);
-  // const [lightMode, setLightMode] = React.useState("dark off");
-
-  // const lightBtn = () => {
-  //   console.log("here");
-  //   if (!modeState) {
-  //     setLightMode("dark on");
-  //   } else {
-  //     setLightMode("dark off");
-  //   }
-  //   setModeState(!modeState);
-  // };
 
   return (
     <div className={lightMode}>

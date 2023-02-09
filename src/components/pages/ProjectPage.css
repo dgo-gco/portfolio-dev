@@ -78,6 +78,7 @@
   grid-gap: 15px;
   justify-items: center;
   padding: 0 10px 0 20px;
+  outline: 1px solid #00b4d8;
 }
 
 .project--image {
@@ -125,7 +126,12 @@
 }
 
 #button-pj:hover {
-  background-color: var(--dark-blue);
+  background-color: #09192F;
+}
+
+.dark.on #button-pj:hover {
+  background-color: #FFF;
+  color: #09192F;
 }
 
 @media screen and (min-width: 901px) {

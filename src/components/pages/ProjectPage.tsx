@@ -27,7 +27,7 @@ export const ProjectPage = ({lightMode}: PageProps) => {
                 <div className={`project--text ${lightMode}`}>              
                     <h1>{projectData.proyectos.name}</h1>
                     <p>{projectData.proyectos.description}</p>
-                    <a href={projectData.proyectos.link}><button id="button-pj">Voir Plus</button></a>
+                    <a href={projectData.proyectos.link}><button id="button-pj" className={lightMode}>Voir Plus</button></a>
                 </div>
             </div>
         </div>

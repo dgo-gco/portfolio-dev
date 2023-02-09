@@ -21,6 +21,7 @@
   height: 85%;
   background-color: #09192f;
   border-radius: 20px;
+  outline: 1px solid #00b4d8;
 }
 
 .cards {
@@ -97,12 +98,11 @@
   padding-top: 10px;
   background-color: #fff;
   border-radius: 20px;
-  height: 130px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 15px;
+  padding: 15px 15px;
   width: min(480px, 100%);
 }
 
@@ -111,12 +111,11 @@
   background-color: #05101f;
   color: #fff;
   border-radius: 20px;
-  height: 130px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 15px;
+  padding: 15px 15px;
   width: min(480px, 100%);
 }
 
@@ -147,7 +146,7 @@
 
   .card {
     min-width: 200px;
-    height: 320px;
+    height: fit-content;
   }
 
   .card--c {

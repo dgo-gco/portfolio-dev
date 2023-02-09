@@ -1,61 +1,136 @@
-.info--sec {
-    height: 85%;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    display: grid;
-    grid-template-rows: repeat(2, 50%);
-    grid-template-areas: 
-    "infoimg"
-    "infotxt";
-}
-  
-.shape-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: infoimg;
-}
-  
-.shape-img > img {
-    width: 95%;
-    height: 90%;
-    object-fit: cover;
-    border-radius: 22% 78% 65% 35% / 30% 62% 38% 70%;
-    grid-area: infoimg;
-}
-  
-.info--txt.dark.off {
-    border-radius: 10px;
-    padding: 20px;
-    grid-area: infotxt;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    background-color: rgba(255, 255, 255, 0);
+/*---SKYBLUE BACKGROUND---*/
+.blue-bg.dark.off {
+  background-color: var(--light-blue);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.info--txt.dark.on {
+.blue-bg.dark.on {
+  background-color: #09192f;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*---WHITE BACKGROUND---*/
+.blue-bg > div {
+  height: 90%;
+  background-color: #fff;
   border-radius: 10px;
+}
+
+.blue-bg.dark.on > div {
+  height: 90%;
+  background-color: #05101f;
+  border-radius: 10px;
+  border: 1px solid #00b4d8;
+}
+
+/*---CONTENT---*/
+
+.info--sec {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.shape-img,
+.info--txt {
+  width: 50%;
+  height: 100%;
+}
+
+.shape-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: infoimg;
+}
+
+.shape-img > div {
+  background: linear-gradient(to top, #35b6fb89, #35b6fb89),
+    url("../images/fotoportafsour.png") no-repeat center;
+  background-size: cover;
+  width: 85%;
+  height: 80%;
+  border-radius: 22% 78% 65% 35% / 30% 62% 38% 70%;
+  grid-area: infoimg;
+}
+
+.shape-img > div:hover {
+  background: linear-gradient(to top, #078dfa00, #078dfa00),
+    url("../images/fotoportafsour.png") no-repeat center;
+  background-size: cover;
+}
+
+.info--txt.dark.off {
   padding: 20px;
   grid-area: infotxt;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  color: #FFF;
+  gap: 10px;
+  height: fit-content;
+  line-height: 1.4rem;
 }
 
-  @media screen and (min-width: 901px) {
-    .info--sec {
-      display: grid;
-      grid-template-columns: repeat(2,50%);
-      grid-template-rows: repeat(2, 50%);
-      grid-template-areas: 
-    "infotxt infoimg"
-    "infotxt infoimg"
-    ;
-    }
+.info--txt.dark.on {
+  padding: 20px;
+  grid-area: infotxt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  height: fit-content;
+  line-height: 1.4rem;
+}
+
+@media screen and (max-width: 901px) {
+  .info--sec {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
   }
+
+  .shape-img {
+    padding: 15px;
+  }
+
+  .shape-img,
+  .info--txt {
+    width: 100%;
+  }
+
+  .shape-img > div{    
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 531px) {
+  .blue-bg.dark.off {
+    height: 120vh;
+  }
+  
+  .blue-bg.dark.on {
+    height: 120vh;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .blue-bg.dark.off {
+    height: 140vh;
+  }
+  
+  .blue-bg.dark.on {
+    height: 140vh;
+  }
+}

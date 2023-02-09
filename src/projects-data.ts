@@ -4,14 +4,14 @@ export const projects = [
     link: "https://brilliant-praline-302aac.netlify.app",
     img: "../images/JavaScript-interactive-site.png",
     name: "E-commerce JS Project",
-    description: "This was a challenging project, and therefore I learnt a lot",
+    description: "Une fois que j'ai acquis les bases de JS, j'ai commencé à manipuler le DOM d'une manière très stimulante, en essayant de ne pas chercher de solutions sur Internet, mais plutôt en cherchant par moi-même le plus possible.",
   },
   {
     id: "2",
     link: "https://country-api-dgo.netlify.app/",
     img: "../images/The-Worldbook-React-project.png",
     name: "The Worldbook",
-    description: "Using Reactjs 18, I started to manipulate an interesting API",
+    description: "J'ai toujours été passionné par la géographie. En utilisant Reactjs 18, j'ai commencé à manipuler une API mondiale très intéressante.",
   },
   {
     id: "3",
@@ -19,15 +19,15 @@ export const projects = [
     img: "../images/Self-care-center.png",
     name: "Self Care Center",
     description:
-      "This is an app that helps users remind themselves of their inherent value",
+      "C’est une application qui aide les utilisateurs à se rappeler de leur valeur intrinsèque en affichant une affirmation ou un mantra aléatoire.",
   },
   {
     id: "4",
-    link: "https://source.unsplash.com/random",
+    link: "https://loquacious-dango-ea9aaa.netlify.app/",
     img: "../images/Book-objects-js.png",
     name: "Book Library",
     description:
-      "What books will you read this year? add them to your library",
+      "Quels livres allez-vous lire cette année ? Ajoutez-les à votre bibliothèque. Dans ce projet, j'ai appris à récupérer les données d'un utilisateur à l'aide de formulaires.",
   },
   {
     id: "5",
@@ -35,6 +35,6 @@ export const projects = [
     img: "../images/Simplon-site-formation.png",
     name: "Simplon.co website clone",
     description:
-      "Following a provided figma file, I've created a simplon website clone",
+      "En suivant un fichier Figma fourni, j'ai créé un clone du site Simplon. C'était un projet difficile en raison du délai qui nous était imparti. Mais je suis très satisfait du résultat.",
   }
 ];

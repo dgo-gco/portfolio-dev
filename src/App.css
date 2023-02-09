@@ -18,6 +18,10 @@ img {
   display: block;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Cabin', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -35,36 +39,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.blue-bg.dark.off{
-  background-color: var(--light-blue);
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 } 
 
- .blue-bg.dark.on{
-  background-color: #09192F;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} 
-
-.blue-bg > div {
-  height: 85%;
-  background-color: #FFF;
-  border-radius: 10px;
-
+@media screen and (max-width: 730px) {
+  .blue-bg.dark.off{
+    height: 110vh;
+  } 
+  
+   .blue-bg.dark.on{
+    height: 110vh;
+  } 
 }
-
-.blue-bg.dark.on > div {
-  height: 85%;
-  background-color: #05101f;
-  border-radius: 10px;
-  border: 1px solid #00B4D8;
-}  
