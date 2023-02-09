@@ -55,6 +55,7 @@
 
 .ball-bouncing {
   background-color: #caf0f8;
+  width: 10px;
 }
 
 .ball-bouncing::before {
@@ -64,7 +65,7 @@
   bottom: 14.7rem;
   content: "";
   height: 0.15rem;
-  position: absolute;
+  /* position: absolute; */
   width: 0.5rem;
 }
 
