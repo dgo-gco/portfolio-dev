@@ -1,16 +1,15 @@
 .project--pages {
-  height: 100vh;
   padding-top: 15px;
 }
 
 .project--page {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
 }
 
 .project--page.dark.on {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
 }
