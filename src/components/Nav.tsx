@@ -11,7 +11,7 @@ export const Nav = ({ lightBtn, lightMode }: NavProps) => {
   const [burger_class, setBurgerClass] = useState("burger-bar unclick");
   const [menu_class, setMenuClass] = useState("menu hidden");
   const [menuClicked, setMenuClicked] = useState(false);
-  const [buttonText, setButtonText] = useState("Dark Mode");
+  const [buttonText, setButtonText] = useState("Light Mode");
 
   const updateMenu = () => {
     if (!menuClicked) {
@@ -25,10 +25,10 @@ export const Nav = ({ lightBtn, lightMode }: NavProps) => {
   };
 
   const changeButtonText = () => {
-    if (buttonText === "Dark Mode") {
-      setButtonText("Light Mode");
-    } else {
+    if (buttonText === "Light Mode") {
       setButtonText("Dark Mode");
+    } else {
+      setButtonText("Light Mode");
     }
   };
 

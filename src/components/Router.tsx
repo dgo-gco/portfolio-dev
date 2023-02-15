@@ -7,14 +7,13 @@ import {Nav} from './Nav'
 //in the page path, info after ':' is considered as parameter
 export const Router = () => {
   const [modeState, setModeState] = React.useState(false);
-  const [lightMode, setLightMode] = React.useState("dark off");
+  const [lightMode, setLightMode] = React.useState("dark on");
 
   const lightBtn = () => {
-    console.log("here");
     if (!modeState) {
-      setLightMode("dark on");
-    } else {
       setLightMode("dark off");
+    } else {
+      setLightMode("dark on");
     }
     setModeState(!modeState);
   };

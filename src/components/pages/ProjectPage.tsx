@@ -9,10 +9,7 @@ type PageProps = {
 
 export const ProjectPage = ({lightMode}: PageProps) => {
     const location = useLocation()
-    console.log(location)
     const projectData = location.state
-    console.log(projectData.any);
-    console.log(lightMode)
     
   return (
     <div className={`project--pages ${lightMode}`}>
