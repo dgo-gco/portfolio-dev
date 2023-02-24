@@ -18,13 +18,15 @@ export const ProjectSection = ({proyectos, lightMode}: ProjectSectionProps) => {
                     <img src={proyectos.img} alt="" className="project--imgs"/>
                 </Link>
             </div>
-            <div className={`card--txt ${lightMode}`}>
-                <Link  to={{pathname:`/page/${proyectos.id}`}}
-                 state={{proyectos: proyectos}} 
-                 >
-                <h4 className={`tit-txt ${lightMode}`}>{proyectos.name}</h4>
-                <p className={`tit-txt ${lightMode}`}>{proyectos.description}</p>
-                </Link>
+            <div className="text-card">
+                <h4 className={`tit-txt ${lightMode}`} id='title-project'>{proyectos.name}</h4>
+                <div className={`card--txt ${lightMode}`}>
+                    <Link  to={{pathname:`/page/${proyectos.id}`}}
+                    state={{proyectos: proyectos}} 
+                    >
+                    <p className={`tit-txt ${lightMode}`}>{proyectos.description}</p>
+                    </Link>
+                </div>
             </div>
         </div>
         </div>

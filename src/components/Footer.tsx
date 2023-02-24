@@ -13,7 +13,7 @@ export const Footer = ({ lightMode }: FooterProps) => {
         <div className="contact-section">
             <div className={`mail ${lightMode}`}>
                 <FaEnvelope />
-                <a href="mailto:jdiegogarciaco@gmail.com" className={`mail ${lightMode}`}>jdiegogarciaco@gmail.com</a>
+                <a href="mailto:jdiegogarciaco@gmail.com" className={`mail ${lightMode}`}>Me contacter</a>
             </div>
             <div className={`socials ${lightMode}`}>
                 <a href="https://github.com/dgo-gco"><FaGithub /></a>

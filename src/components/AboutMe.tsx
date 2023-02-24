@@ -13,7 +13,7 @@ export const AboutMe = ({ lightMode }: AboutMeProps) => {
           <div className="img-shape"></div>
         </div>
         <div className={`info--txt ${lightMode}`}>
-            <h2>About me</h2>
+            <h2>A propos de moi</h2>
             <p>Grâce à ma dernière expérience professionnelle en tant que Social Media Manager ou j'ai eu l'occasion 
               de travailler dans l'espace blockchain & Web3, j'ai également découvert un tout nouveau monde dans la 
               tech et une véritable passion pour le code. C'est ainsi que j'ai commencé à apprendre par moi-même depuis 
