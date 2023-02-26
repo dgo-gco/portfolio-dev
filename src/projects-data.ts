@@ -16,19 +16,19 @@ export const projects = [
   },
   {
     id: "3",
+    link: "https://restaurant-app-phi-two.vercel.app/",
+    img: "../images/restaurant-app.png",
+    name: "Commandez mtn app",
+    description:
+      "Quelle meilleure façon de mettre en œuvre React Hooks que de construire un projet. Cherche ton restaurant préféré et ajoute-le à tes favoris.",
+  },
+  {
+    id: "4",
     link: "https://simplon-site-html-css-js.netlify.app/",
     img: "../images/Simplon-site-formation.png",
     name: "Simplon.co website clone",
     description:
       "En suivant un fichier Figma fourni, j'ai créé un clone du site Simplon. C'était un projet difficile en raison du délai qui nous était imparti. Mais je suis très satisfait du résultat.",
-  },
-  {
-    id: "4",
-    link: "https://loquacious-dango-ea9aaa.netlify.app/",
-    img: "../images/Book-objects-js.png",
-    name: "Book Library",
-    description:
-      "Quels livres allez-vous lire cette année ? Ajoutez-les à votre bibliothèque. Dans ce projet, j'ai appris à récupérer les données d'un utilisateur à l'aide de formulaires.",
   },
   {
     id: "5",
